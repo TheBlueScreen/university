@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<div id="addPost">
+    <form method="post" action="/add-post">
+        <label for="title"> title : </label>
+        <input id="title" name="title" type="text" placeholder="Title"/>
+        <label for="content">Content : </label>
+        <input id="content" name="content" type="text" placeholder="Type your News"/>
+        <label for="date">Date : </label>
+        <input id="date" name="date" type="text" placeholder=" day month"/>
+        <label for="author">Author : </label>
+        <input id="author" name="author" type="number"/>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+{% endblock %}

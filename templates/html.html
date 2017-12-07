@@ -1,0 +1,15 @@
+    {% extends "base.html" %}
+    {% block content %}
+    <div id="newsShort">
+        {% for n in nw %}
+        <div class="newsShortShow">
+            <h5>{{n.title}}</h5>
+            <p> {{n.content[:5]+"..."}}</p>
+            <span>{{n.author.username}}</span>
+            <p>{{n.date}}</p>
+            <p>{{n.category}}</p>
+            <a id="readMore" href="http://127.0.0.1:8080/news">Read more</a>
+        </div>
+        {% endfor %}
+    </div>
+ {% endblock %}

@@ -1,0 +1,14 @@
+ {% extends "base.html" %}
+    {% block content %}
+
+
+    <div id="loginForm">
+        <form action="/login" method="post">
+            <label for="userName"> User Name : </label>
+            <input id="userName" name="userName" type="text" placeholder="UserName"/>
+            <label for="password">PassWord : </label>
+            <input id="password" name="password" type="password" placeholder="Password"/>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+{% endblock %}
