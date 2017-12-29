@@ -64,7 +64,7 @@ li a:hover {
     margin-top: 25px;
     flex-flow: column wrap;
     flex: 0 0 60vw;
-    height: 100%;
+    height: 100vh;
 }
 
 .newsShortShow {
@@ -127,6 +127,7 @@ img {
 #loginForm form {
     display: flex;
     flex-flow: column;
+    height: 100vh;
 
 }
 
@@ -174,11 +175,12 @@ img {
     border: 1px solid #3673b9;;
 }
 
-#title, #date {
+#title, #date, #category {
     height: 50px;
     background-color: #b3c0ce;
     border-radius: 10px;
     border: 1px solid #3673b9;
+
 }
 
 button {
@@ -214,7 +216,7 @@ label {
 
 #readMore {
     text-decoration: none;
-    color: #000;
+    color: #80dcd9;
 }
 
 #readMore:hover {
@@ -227,4 +229,25 @@ label {
     background-color: #b3c0ce;
     border: 1px solid #6791c1;
 
+}
+
+#assume {
+
+}
+
+.titleShow {
+    font-size: 31px;
+    color: #004596;
+    font-family: sans-serif;
+    padding-bottom: 13px;
+}
+
+.details {
+    font-size: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #2f4764;
+    color: #add3f0;
 }

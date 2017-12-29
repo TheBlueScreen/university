@@ -2,7 +2,16 @@
 {% block content %}
 
 <div id="completeNews">
-    v jelvbjbverbvrjlvqbb eqrbjrbgnlg
+    <div class="newsShortShow">
+        <h5 class="titleShow">{{n.title}}</h5>
+
+        <p class="assume"> {{n.content}}</p>
+
+
+        <p class="details">{{n.category}} , {{n.date}}</p>
+
+        <p class="details">{{n.author.username}}</p>
+    </div>
 </div>
 
 {% endblock %}

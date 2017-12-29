@@ -1,6 +1,7 @@
 <!DOCTYPE>
 <html>
 <head>
+
     <link rel="stylesheet" href="../static/style.css">
     <link rel="icon" href="../static/518324.png">
     <title>
@@ -21,13 +22,20 @@
             <li><a href="http://127.0.0.1:8080/">Home</a></li>
             <li><a href="http://127.0.0.1:8080/add-post">Add Post</a></li>
             <li><a href="http://127.0.0.1:8080/register">Sign Up</a></li>
-            <li><a href="http://127.0.0.1:8080/login">login</a></li>
-            <li><a href="http://127.0.0.1:8080/about">About</a></li>
+            {% if 'username' in session %}
+                <li><a href="logout">logout</a></li>
+            {% else %}
+                <li><a href="http://127.0.0.1:8080/login">login</a></li>
+                <li><a href="http://127.0.0.1:8080/about">About</a></li>
+            {% endif %}
 
         </ul>
 
     </div>
     {% block content %}{% endblock %}
 </div>
+<footer>
+    this is footer
+</footer>
 </body>
 </html>
